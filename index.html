@@ -55,7 +55,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">Convolutional Neural Networks : What and Why</h1>
       <p> What: Special NN for processing grid like data </p>
-      <p> Features: 3 fundamental features for reducing the number of parameters</p>
+      <p> Features: 3 fundamental features for reducing the number of parameters. </p>
+      <p> 1. Sparse interacitons between the layers => indirect interactions <br/>
+          2. Parameter sharing <br/>
+          3. Equivariant representaiton : f(g(x)) = g(f(x)) => consider f = translation and g = convolution. Equivariance of convolution w.r.t translaiton i usefull for parameter sharing acrosss the data.
+         For example in image data the first convolution layer generally focuses on the edge dectection, however similar edgess may occur throughout the image, so it makes sense to represent them with same parameters. </p>
     </div>
   </div>
 

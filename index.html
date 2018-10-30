@@ -50,7 +50,20 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
-
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">checklist</h1>
+      <p>1. generative vs discriminative<br/>
+         2. various machine learning algorithms : linear regresssion, multiple regerssion, SVM, PCA<br/>
+         3. supervised vs unsupervised => feed forward, autoencoders, variational autoencoders, GANS, cyclic GANS<br/>
+         4. Tricks of the trade for pre-processing data and training deep neural networks.<br/>
+         5. Applying machine learning on 2D/3D visual data (images or video), image and video processing concepts (experience in machine learning applications in video compression)<br/>
+         6. object detection, recognition, tracking, activity recognition, depth sensing, segmentation, anomaly detection, super-resolution<br/>
+         7. LSTMs, few-shots learning -> (person re-identification, anomaly detection, semantic segmentation, etc.) <br/>
+         8. mobile computing for deep learnig <br/>
+         9. frameworks for mobile computing.</p>
+    </div>
+  </div>
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">Convolutional Neural Networks : What and Why</h1>
@@ -65,23 +78,36 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
   <div class="w3-row">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Depth wisse seperable Convolution</h1>
+      <h1 class="w3-text-teal">Depth wise seperable Convolution</h1>
       <p>1. Depth wise convolution :  Filtering stage. => Applies convolution to single channel at a time. <br/>
          2. Point wise convolution : Combination stage.=> Performs linear combination on each of the previous layers.</p>
     </div>
   </div>
-
-  <div class="w3-row w3-padding-64">
+  <div class="w3-row">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+      <h1 class="w3-text-teal">GANS</h1>
+      <p>Generator vs discriminator game.<br/>.
+          Discriminator tries to predict real or fake and generator takes random noise and transforms it into randomly selected example from the distribution
+        that the network is learning to model.<br/>
+        DCGANS work verywell for generating small images from restricted domain.<br/>
+      Problems with training GANS<br/>
+      1. Mode collape or sometimes called Helvetica scenario => The generator may start to produce several copies of the same image.<br/>
+      2. </p>
     </div>
   </div>
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Why go deeper?</h1>
+      <p>According to universal approximatin theorem, a feed forward network with a ingle hidden layer containing a finte number
+      of neurons, can approximate continuous funcitons on compact subset on R^n, under mild asssumptions on the activation funciton.<br/>
+      <br/><center>So why go deeper</center><br/><br/>
+      Because in the above process we may enter the process of memorizing the training data leading to overfitting. So, a common trend in deep learning
+       to generalize well is to go deeper, but howdeep. Going verydeep leads ot vanishing gradient problem.<br/>
+     So ResNet is introduced</p>
+    </div>
+  </div>
+
+
 
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
